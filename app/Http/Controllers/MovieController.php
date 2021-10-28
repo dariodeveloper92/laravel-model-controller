@@ -17,7 +17,7 @@ class MovieController extends Controller
 
     public function movieDetail($id) {
         /* Select * FROM movies WHERE id = $id */
-        $movie = Movie::where('id', $id)->first();
+        $movie = Movie::where('id', $id)->get();
 
         return view('dettagli', compact('movie'));
     }
