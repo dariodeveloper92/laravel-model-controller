@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/* Home */
+Route::get('/', 'HomeController@home')->name('pagina-home');
 
-Route::get('/', function () {
-    return view('home');
-});
+/* Movies */
+Route::get('/movies', 'MovieController@listMovies')->name('pagina-movies');
+
+/* Dettagli */
+Route::get('/movie-detail/{id}','MovieController@movieDetail')->name('pagina-dettaglio');
+
+/* Contacts */
+Route::get('/contacts', 'HomeController@contacts')->name('pagina-contatti');
+
+/* About */
+Route::get('/about', 'HomeController@about')->name('pagina-about');

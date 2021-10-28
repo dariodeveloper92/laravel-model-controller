@@ -1,0 +1,16 @@
+header {
+  text-align: center;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 5px;
+}
+header ul li a:hover, header ul li a.active {
+  background-color: lightgray;
+}
