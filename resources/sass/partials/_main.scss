@@ -1,0 +1,30 @@
+.container-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.movies-title {
+    font-size: 30px;
+    width: 300px;
+    background-color: lightgreen;
+    
+}
+
+.title {
+    width: 200px;
+    font-size: 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.original_title {
+    width: 300px;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 5%;
+}

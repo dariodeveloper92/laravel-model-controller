@@ -10,9 +10,8 @@ class MovieController extends Controller
 {
     // Metodi () che riportano alle rotte su web.php
     public function listMovies() {
-        Movie::all();
-        $films = Movie::all();
-        return view('movies', compact('films'));
+        $movies = Movie::all();
+        return view('movies', compact('movies'));
     }
 
     public function movieDetail($id) {
